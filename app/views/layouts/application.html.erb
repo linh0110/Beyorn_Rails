@@ -3,6 +3,7 @@
   <head>
     <title>Pragprog Books Online Store</title>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => 'reload' %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => 'reload' %>
     <%= csrf_meta_tags %>
   </head>
   <body class="<%= controller.controller_name %>">
@@ -12,6 +13,9 @@
     </div>
     <div id="columns">
       <div id="side">
+        <div>
+          <%= render @cart %>
+        </div>
         <ul>
           <li><a href="http://www....">Home</a></li>
           <li><a href="http://www..../faq">Questions</a></li>

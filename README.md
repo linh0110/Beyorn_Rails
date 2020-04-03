@@ -1,24 +1,49 @@
-# README
+Version
+Ruby version: 2.7.0
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails version: 6.0.2.1
 
-Things you may want to cover:
+Database management system: PostgreSQL
 
-* Ruby version
+Database version: 12.2
 
-* System dependencies
+Database name: blog_development
 
-* Configuration
+Install and Deloyment
+Clone repository
 
-* Database creation
+    $ git clone https://github.com/linh0110/Beyorn_Rails
+    $ cd Beyorn_Rails
+    
+Check version
+User ruby and rails version
 
-* Database initialization
+    $ ruby -v #2.7.0
+    $ rails -v #6.0.2.1
+    
+if not have to install the correct version
 
-* How to run the test suite
+    $ gem install rails -v 6.0.2.1
+    
+Install dependencies
 
-* Services (job queues, cache servers, search engines, etc.)
+    gem install bundler
+    
+Install & update Gemfile
 
-* Deployment instructions
+    $ bundle install
+    
+Initialize the database
 
-* ...
+    $ rails db:setup #create database
+    $ db:migrate #create table and data structure
+    $ db:seed #create seed data
+
+yarn : v1.22.4 if the run fails, Please run 'yarn install --check-files' to update.
+
+Run server
+
+    $ rails s
+    
+Run on browser
+    http://localhost:3000/
